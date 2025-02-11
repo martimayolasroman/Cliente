@@ -1,0 +1,2 @@
+﻿  Cliente.cpp
+C:\Users\mmayo\Desktop\Shooter2dUDP\Shooter2D\Cliente\Cliente.cpp(4,10): error C1083: No se puede abrir el archivo incluir: 'SFML/Graphics.hpp': No such file or directory
