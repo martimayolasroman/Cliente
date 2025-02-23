@@ -1,9 +1,36 @@
 ﻿  Client.cpp
-C:\SFML-3.0.0\include\SFML\System\Exception.hpp(41,47): warning C4275: se ha utilizado una interfaz no de DLL class 'std::runtime_error' como base para la interfaz DLL class 'sf::Exception'
+C:\Users\mmayo\Desktop\Shooter2dUDP\Shooter2D\SFML-3.0.0\include\SFML\System\Exception.hpp(41,47): warning C4275: se ha utilizado una interfaz no de DLL class 'std::runtime_error' como base para la interfaz DLL class 'sf::Exception'
   (compilando archivo de origen "Client.cpp")
   C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\stdexcept(100,19):
   vea la declaración de 'std::runtime_error'
-  C:\SFML-3.0.0\include\SFML\System\Exception.hpp(41,23):
+  C:\Users\mmayo\Desktop\Shooter2dUDP\Shooter2D\SFML-3.0.0\include\SFML\System\Exception.hpp(41,23):
   vea la declaración de 'sf::Exception'
   
+  Mapa.cpp
+C:\Users\mmayo\Desktop\Shooter2dUDP\Shooter2D\SFML-3.0.0\include\SFML\System\Exception.hpp(41,47): warning C4275: se ha utilizado una interfaz no de DLL class 'std::runtime_error' como base para la interfaz DLL class 'sf::Exception'
+  (compilando archivo de origen "Mapa.cpp")
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\stdexcept(100,19):
+  vea la declaración de 'std::runtime_error'
+  C:\Users\mmayo\Desktop\Shooter2dUDP\Shooter2D\SFML-3.0.0\include\SFML\System\Exception.hpp(41,23):
+  vea la declaración de 'sf::Exception'
+  
+C:\Users\mmayo\Desktop\Shooter2dUDP\Shooter2D\Cliente\Mapa.cpp(54,23): warning C4267: '=': conversión de 'size_t' a 'int'; posible pérdida de datos
+C:\Users\mmayo\Desktop\Shooter2dUDP\Shooter2D\Cliente\Mapa.cpp(56,29): warning C4267: '=': conversión de 'size_t' a 'int'; posible pérdida de datos
+  Personaje.cpp
+C:\Users\mmayo\Desktop\Shooter2dUDP\Shooter2D\SFML-3.0.0\include\SFML\System\Exception.hpp(41,47): warning C4275: se ha utilizado una interfaz no de DLL class 'std::runtime_error' como base para la interfaz DLL class 'sf::Exception'
+  (compilando archivo de origen "Personaje.cpp")
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\stdexcept(100,19):
+  vea la declaración de 'std::runtime_error'
+  C:\Users\mmayo\Desktop\Shooter2dUDP\Shooter2D\SFML-3.0.0\include\SFML\System\Exception.hpp(41,23):
+  vea la declaración de 'sf::Exception'
+  
+  main.cpp
+C:\Users\mmayo\Desktop\Shooter2dUDP\Shooter2D\SFML-3.0.0\include\SFML\System\Exception.hpp(41,47): warning C4275: se ha utilizado una interfaz no de DLL class 'std::runtime_error' como base para la interfaz DLL class 'sf::Exception'
+  (compilando archivo de origen "main.cpp")
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\stdexcept(100,19):
+  vea la declaración de 'std::runtime_error'
+  C:\Users\mmayo\Desktop\Shooter2dUDP\Shooter2D\SFML-3.0.0\include\SFML\System\Exception.hpp(41,23):
+  vea la declaración de 'sf::Exception'
+  
+  Generando código...
   Cliente.vcxproj -> C:\Users\mmayo\Desktop\Shooter2dUDP\Shooter2D\x64\Debug\Cliente.exe

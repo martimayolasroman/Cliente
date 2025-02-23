@@ -1,17 +1,17 @@
 #include <SFML/Graphics.hpp>
 #include <SFML/Network.hpp>
 #include <iostream>
-
+#include <vector>
 #include "Client.h"
+#include "Mapa.h"
 
-//Configuracion de la ventana
 
-const int WIDTH = 400;
-const int HEIGHT = 300;
+
 
 int main() {
 
 	Client client;
+	
 	std::cout << "=== Shooter 2D Online ===" << std::endl;
 
 	//Conectar servidor
@@ -21,7 +21,8 @@ int main() {
 	}
 
 	while (true) {
-		std::cout << "\n 1.Iniciar Sesion \n 2.Registrarse \n Salir \n Eleccion: ";
+
+		std::cout << "\n 1.Iniciar Sesion \n 2.Registrarse \n 3.Salir \n Eleccion: ";
 		int opcion;
 		std::cin >> opcion;
 		std::cin.ignore();
@@ -45,6 +46,7 @@ int main() {
 
 		// Recibir respuesta
 		std::string response = client.receivePacket();
+
 		if (response.empty()) {
 			std::cout << "Error: No se recibió respuesta.\n";
 			continue;
@@ -52,21 +54,36 @@ int main() {
 
 		// Procesar respuesta
 		if (response == "LOGIN_OK") {
+			client.nombreUsuario = user; // Almacenar el nombre del usuario
 			std::cout << "¡Inicio de sesión exitoso!\n";
-			break; // Iniciar juego
+			
 		}
 		else if (response == "REGISTER_OK") {
+			client.nombreUsuario = user; // Almacenar el nombre del usuario
 			std::cout << "¡Registro exitoso!\n";
-			// Iniciar juego
+			
 		}
 		else {
 			std::cout << "Error: " << response << "\n";
 		}
 
+		//Matchmaking
+
+		std::string modo;
+		std::cout << "Selecciona modo (AMISTOSO/COMPETITIVO): ";
+		std::getline(std::cin, modo);
+		
+
+		client.solicitarPartida(modo);
+		std::cout << "Buscando partida..." << std::endl;
+
+		// Esperar notificación de partida
+		client.esperarPartida();
+		
 		
 
 	}
-	//client.disconnectServer();
+	
 	return 0;
 }
 	
